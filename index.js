@@ -1,4 +1,5 @@
-const Discord = require('discord.js');
+const Discord = require('discord.js'); //import client from discord
+
 const client = new Discord.Client();
 
 client.on('ready', () => {
@@ -7,22 +8,15 @@ client.on('ready', () => {
 
 client.on('message', msg => {
     // check if message isn't from us
-    if (msg.author === client.user) {
+    if (msg.author == client.user) {
       return;
     }
-    else if (msg.content.startsWith('/say')) {
-      // Extract the message after "/say"
-      const messageToSay = msg.content.slice(5).trim();
-      
-      // Check if there's actually a message to say
-      if (messageToSay) {
-        // Respond with the message prefixed with "message:"
-        msg.channel.send('message: ' + messageToSay);
-      } else {
-        // If no message provided after "/say", inform the user
-        msg.reply('You need to provide a message after "/say"');
-      }
+    else if (msg.content === 'i hate furrys') {
+      msg.reply('nofurrys!');
+    }
+    else {
+        msg.reply(msg.content);
     }
 });
 
-client.login(process.env.TOKEN);
+client.login(process.env.TOKEN); //login bot using token
