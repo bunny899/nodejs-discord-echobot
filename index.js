@@ -13,10 +13,6 @@ client.on('message', msg => {
     }
     else if (msg.content === 'i hate furrys') {
       msg.reply('nofurrys!');
-    }
-    else {
-        msg.reply(msg.content);
-    }
-});
+
 
 client.login(process.env.TOKEN); //login bot using token
