@@ -21,14 +21,14 @@
     }
 </style>
     
-<a href="Fu.zip" download>Download File</a>
+<button>Change mascot</button>
 
 <!-- Access Locker Button -->
 <button onclick="showCodeInput()">Are you +18?</button>
 
 <!-- Code Input Field (Initially hidden) -->
 <div id="codeInput" style="display: none;">
-    <label for="code">Enter code:</label>
+    <label for="code">Search</label>
     <input type="text" id="code">
     <button onclick="checkCode()">Submit</button>
 </div>
@@ -36,7 +36,7 @@
 <!-- Locker (Initially hidden) -->
 <div id="locker" style="display: none;">
     <!-- Add content for the locker here -->
-    <h2>Welcome to the locker!</h2>
+    <h2>Welcome!</h2>
     <p>This is the content of the locker.</p>
     <!-- Display saved IP addresses -->
     <div id="savedIPs"></div>
