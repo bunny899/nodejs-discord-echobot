@@ -10,7 +10,7 @@
 <link rel="icon" href="e621.jpeg" type="image/x-icon">
 <!-- Video Player -->
 <video controls>
-    <source src="IMG_7396.MOV" type="video/mp4">
+    <source src="IMG_7446.MOV" type="video/mp4">
     Your browser does not support the video tag.
 </video>
 
